@@ -12,15 +12,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Service2Application{
 
-	@Autowired
+//	@Autowired
 	private GreetingClient greetingClient;
 
 	public static void main(String[] args) {
 		SpringApplication.run(Service2Application.class, args);
 	}
 
-	@RequestMapping("feign")
-	public String greeting(){
-		return "feign --> " + greetingClient.greeting();
-	}
+//	@RequestMapping("feign")
+//	public String greeting(){
+//		return "feign --> " + greetingClient.greeting();
+//	}
 }
